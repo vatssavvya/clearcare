@@ -1,0 +1,695 @@
+{
+  "documentMetadata": {
+    "title": "Northstar Harbor Medical Center - Fictional Discharge Summary",
+    "documentType": "Hospital discharge summary",
+    "pageCount": 4,
+    "synthetic": true
+  },
+  "encounterMetadata": {
+    "facility": "Northstar Harbor Medical Center (fictional)",
+    "admissionDate": "March 2, 2031",
+    "dischargeDate": "March 6, 2031",
+    "encounterId": "NHMC-DEMO-1042"
+  },
+  "patientContext": {
+    "displayName": "Jordan Sample",
+    "ageRange": "60-69",
+    "preferredLanguage": "English"
+  },
+  "reasonForAdmission": {
+    "id": "reason-admission",
+    "title": "Why the hospital stay happened",
+    "detail": "Admitted for worsening shortness of breath and swelling in both legs.",
+    "plainLanguageExplanation": "The document says the hospital stay began because breathing and leg swelling got worse.",
+    "sourceIds": ["s-reason"],
+    "confidence": "high",
+    "sourceMatchStatus": "matched",
+    "conflictIds": []
+  },
+  "disposition": {
+    "id": "disposition-home",
+    "title": "Discharged home",
+    "detail": "Home with visiting nurse services.",
+    "plainLanguageExplanation": "The document says the patient is going home and a visiting nurse is planned.",
+    "sourceIds": ["s-disposition"],
+    "confidence": "high",
+    "sourceMatchStatus": "matched",
+    "conflictIds": []
+  },
+  "codeStatus": {
+    "id": "code-status",
+    "title": "Code status",
+    "detail": "Full code.",
+    "plainLanguageExplanation": "The document records the code status as Full code.",
+    "sourceIds": ["s-disposition"],
+    "confidence": "high",
+    "sourceMatchStatus": "matched",
+    "conflictIds": []
+  },
+  "allergies": [
+    {
+      "id": "allergy-penicillin",
+      "title": "Penicillin",
+      "detail": "Penicillin - rash.",
+      "plainLanguageExplanation": "The fictional record lists penicillin with rash as the reaction.",
+      "sourceIds": ["s-disposition"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    }
+  ],
+  "plainLanguageSummary": {
+    "title": "Your next steps, organized from the discharge document",
+    "body": "The document lists time-sensitive lab work and follow-up, several medication actions, daily weight monitoring, food and fluid limits, mobility instructions, and warning signs. One insulin instruction conflicts and one referenced attachment is missing, so both are marked for confirmation instead of being guessed.",
+    "sourceIds": ["s-monitor-weight", "s-monitor-lab", "s-followups", "s-conflict-insulin"]
+  },
+  "primaryDiagnoses": [
+    {
+      "id": "diagnosis-heart-failure",
+      "title": "Acute decompensated heart failure with preserved ejection fraction",
+      "detail": "Listed as a primary diagnosis.",
+      "plainLanguageExplanation": "This diagnosis is copied from the document; ClearCare does not interpret or diagnose it.",
+      "sourceIds": ["s-primary-diagnoses"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    },
+    {
+      "id": "diagnosis-pneumonia",
+      "title": "Community-acquired pneumonia, improving",
+      "detail": "Listed as a primary diagnosis.",
+      "plainLanguageExplanation": "This diagnosis and its improving status are copied from the document.",
+      "sourceIds": ["s-primary-diagnoses"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    }
+  ],
+  "secondaryDiagnoses": [
+    {
+      "id": "diagnosis-ckd",
+      "title": "Chronic kidney disease stage 3",
+      "detail": "Listed as a secondary diagnosis.",
+      "plainLanguageExplanation": "This term is carried over exactly from the document.",
+      "sourceIds": ["s-secondary-diagnoses"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    },
+    {
+      "id": "diagnosis-diabetes",
+      "title": "Type 2 diabetes mellitus",
+      "detail": "Listed as a secondary diagnosis.",
+      "plainLanguageExplanation": "This term is carried over exactly from the document.",
+      "sourceIds": ["s-secondary-diagnoses"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    },
+    {
+      "id": "diagnosis-hypertension",
+      "title": "Hypertension",
+      "detail": "Listed as a secondary diagnosis.",
+      "plainLanguageExplanation": "This term is carried over exactly from the document.",
+      "sourceIds": ["s-secondary-diagnoses"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    },
+    {
+      "id": "diagnosis-venous",
+      "title": "Chronic venous insufficiency",
+      "detail": "Listed as a secondary diagnosis.",
+      "plainLanguageExplanation": "This term is carried over exactly from the document.",
+      "sourceIds": ["s-secondary-diagnoses"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    }
+  ],
+  "hospitalCourseSummary": {
+    "id": "hospital-course",
+    "title": "About the hospital stay",
+    "detail": "The fictional stay included intravenous diuresis, antibiotics, oxygen weaning, kidney-function monitoring, cardiology review, and a physical-therapy mobility assessment.",
+    "plainLanguageExplanation": "This is background about what happened in the hospital, not a new instruction for home.",
+    "sourceIds": ["s-hospital-course"],
+    "confidence": "high",
+    "sourceMatchStatus": "matched",
+    "conflictIds": []
+  },
+  "procedures": [
+    {
+      "id": "procedure-echo",
+      "title": "Transthoracic echocardiogram",
+      "detail": "Performed March 3, 2031.",
+      "plainLanguageExplanation": "The document lists this test as a procedure during the stay.",
+      "sourceIds": ["s-procedures"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    }
+  ],
+  "consultations": [
+    {
+      "id": "consult-cardiology",
+      "title": "Cardiology, Physical Therapy, and Care Management",
+      "detail": "These services were consulted during the stay.",
+      "plainLanguageExplanation": "These are hospital-stay consultations, not follow-up appointments.",
+      "sourceIds": ["s-consultations"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    }
+  ],
+  "medicationReconciliation": [
+    {
+      "id": "med-furosemide",
+      "title": "Start furosemide",
+      "plainLanguageExplanation": "The document says to start this medication using the exact dose and duration shown.",
+      "sourceIds": ["s-med-furosemide"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "action": "start",
+      "nameAsWritten": "furosemide",
+      "dose": "40",
+      "unit": "mg",
+      "route": "by mouth",
+      "frequency": "once daily",
+      "duration": "7 days",
+      "conditionalText": null,
+      "monitoringText": null
+    },
+    {
+      "id": "med-carvedilol",
+      "title": "Continue carvedilol",
+      "plainLanguageExplanation": "The document says to continue this medication.",
+      "sourceIds": ["s-med-carvedilol"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "action": "continue",
+      "nameAsWritten": "carvedilol",
+      "dose": "12.5",
+      "unit": "mg",
+      "route": "by mouth",
+      "frequency": "twice daily",
+      "duration": null,
+      "conditionalText": null,
+      "monitoringText": null
+    },
+    {
+      "id": "med-lisinopril",
+      "title": "Change lisinopril",
+      "plainLanguageExplanation": "The document lists a changed instruction and an exact hold threshold.",
+      "sourceIds": ["s-med-lisinopril"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "action": "change",
+      "nameAsWritten": "lisinopril",
+      "dose": "10",
+      "unit": "mg",
+      "route": "by mouth",
+      "frequency": "once daily",
+      "duration": null,
+      "conditionalText": "HOLD if systolic blood pressure is < 100 mmHg.",
+      "monitoringText": "systolic blood pressure < 100 mmHg"
+    },
+    {
+      "id": "med-ibuprofen",
+      "title": "Stop ibuprofen",
+      "plainLanguageExplanation": "The document says to stop and not resume without new prescriber instructions.",
+      "sourceIds": ["s-med-ibuprofen"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "action": "stop",
+      "nameAsWritten": "ibuprofen",
+      "dose": "200",
+      "unit": "mg",
+      "route": null,
+      "frequency": null,
+      "duration": null,
+      "conditionalText": "Do not resume unless your prescriber gives new instructions.",
+      "monitoringText": null
+    },
+    {
+      "id": "med-doxycycline",
+      "title": "Temporary doxycycline",
+      "plainLanguageExplanation": "The document lists a three-day course and then says to stop.",
+      "sourceIds": ["s-med-doxycycline"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "action": "temporary",
+      "nameAsWritten": "doxycycline",
+      "dose": "100",
+      "unit": "mg",
+      "route": "by mouth",
+      "frequency": "twice daily",
+      "duration": "3 days",
+      "conditionalText": "then stop",
+      "monitoringText": null
+    },
+    {
+      "id": "med-insulin",
+      "title": "Insulin glargine needs confirmation",
+      "plainLanguageExplanation": "Two pages list different nightly doses, so ClearCare leaves the instruction unresolved.",
+      "sourceIds": ["s-med-insulin", "s-conflict-insulin"],
+      "confidence": "low",
+      "sourceMatchStatus": "matched",
+      "conflictIds": ["conflict-insulin-dose"],
+      "action": "unclear",
+      "nameAsWritten": "insulin glargine",
+      "dose": null,
+      "unit": "units",
+      "route": "under the skin",
+      "frequency": "nightly",
+      "duration": null,
+      "conditionalText": "Page 2 states 8 units; page 4 states 10 units.",
+      "monitoringText": null
+    },
+    {
+      "id": "med-atorvastatin",
+      "title": "Continue atorvastatin",
+      "plainLanguageExplanation": "The document says to continue this medication.",
+      "sourceIds": ["s-med-atorvastatin"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "action": "continue",
+      "nameAsWritten": "atorvastatin",
+      "dose": "20",
+      "unit": "mg",
+      "route": "by mouth",
+      "frequency": "nightly",
+      "duration": null,
+      "conditionalText": null,
+      "monitoringText": null
+    },
+    {
+      "id": "med-metformin",
+      "title": "Hold metformin",
+      "plainLanguageExplanation": "The document says to hold it until the recheck is reviewed and to ask when to resume.",
+      "sourceIds": ["s-med-metformin"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "action": "hold",
+      "nameAsWritten": "metformin",
+      "dose": "500",
+      "unit": "mg",
+      "route": null,
+      "frequency": null,
+      "duration": null,
+      "conditionalText": "until the kidney-function recheck is reviewed; ask the prescribing clinician when to resume",
+      "monitoringText": "kidney-function recheck"
+    },
+    {
+      "id": "med-potassium",
+      "title": "Change potassium chloride across two pages",
+      "plainLanguageExplanation": "The instruction continues at the page break; both source pages are retained.",
+      "sourceIds": ["s-med-potassium-a", "s-med-potassium-b"],
+      "confidence": "medium",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "action": "change",
+      "nameAsWritten": "potassium chloride",
+      "dose": "20 then 10",
+      "unit": "mEq",
+      "route": "by mouth",
+      "frequency": "once daily",
+      "duration": "20 mEq for 5 days, then resume 10 mEq",
+      "conditionalText": null,
+      "monitoringText": null
+    }
+  ],
+  "timelineEvents": [
+    {
+      "id": "timeline-lab",
+      "title": "Complete the basic metabolic panel",
+      "plainLanguageExplanation": "The source says the lab should be checked within 48 hours.",
+      "sourceIds": ["s-monitor-lab"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "bucket": "next_48_hours",
+      "timeWindowAsWritten": "within 48 hours",
+      "category": "monitoring"
+    },
+    {
+      "id": "timeline-nurse",
+      "title": "First visiting-nurse visit",
+      "plainLanguageExplanation": "The source schedules the first home visit within 48 hours.",
+      "sourceIds": ["s-home-service"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "bucket": "next_48_hours",
+      "timeWindowAsWritten": "within 48 hours",
+      "category": "service"
+    },
+    {
+      "id": "timeline-cardiology",
+      "title": "Schedule cardiology follow-up",
+      "plainLanguageExplanation": "The source gives a 5-7 day window.",
+      "sourceIds": ["s-followups"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "bucket": "next_7_days",
+      "timeWindowAsWritten": "within 5-7 days",
+      "category": "follow_up"
+    },
+    {
+      "id": "timeline-primary-care",
+      "title": "Schedule primary care follow-up",
+      "plainLanguageExplanation": "The source gives a 7 day window.",
+      "sourceIds": ["s-followups"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "bucket": "next_7_days",
+      "timeWindowAsWritten": "within 7 days",
+      "category": "follow_up"
+    },
+    {
+      "id": "timeline-pulmonary",
+      "title": "Schedule pulmonary clinic follow-up",
+      "plainLanguageExplanation": "The source gives a 2-4 week window.",
+      "sourceIds": ["s-followups"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "bucket": "later",
+      "timeWindowAsWritten": "in 2-4 weeks",
+      "category": "follow_up"
+    }
+  ],
+  "monitoringTasks": [
+    {
+      "id": "monitor-daily-weight",
+      "title": "Daily morning weight",
+      "plainLanguageExplanation": "The document gives the timing and two exact thresholds for calling the cardiology office.",
+      "sourceIds": ["s-monitor-weight"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "measurement": "weight",
+      "threshold": {
+        "comparison": ">",
+          "value": "2 lb in 24 hours or > 5 lb in 7 days",
+        "unit": "lb"
+      },
+      "timingAsWritten": "every morning after using the bathroom and before breakfast",
+      "actionAsWritten": "Call the cardiology office the same day."
+    },
+    {
+      "id": "monitor-basic-panel",
+      "title": "Basic metabolic panel",
+      "plainLanguageExplanation": "The document requests this blood test within 48 hours.",
+      "sourceIds": ["s-monitor-lab"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "measurement": "potassium and kidney-function results",
+      "threshold": null,
+      "timingAsWritten": "within 48 hours",
+      "actionAsWritten": "The ordering clinic will review the results."
+    }
+  ],
+  "followUps": [
+    {
+      "id": "follow-cardiology",
+      "title": "Cardiology",
+      "plainLanguageExplanation": "Schedule within the exact source window.",
+      "sourceIds": ["s-followups"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "specialtyOrService": "Cardiology",
+      "timingAsWritten": "within 5-7 days",
+      "schedulingInstruction": "Schedule follow-up."
+    },
+    {
+      "id": "follow-primary-care",
+      "title": "Primary care",
+      "plainLanguageExplanation": "Schedule within the exact source window.",
+      "sourceIds": ["s-followups"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "specialtyOrService": "Primary care",
+      "timingAsWritten": "within 7 days",
+      "schedulingInstruction": "Schedule follow-up."
+    },
+    {
+      "id": "follow-pulmonary",
+      "title": "Pulmonary clinic",
+      "plainLanguageExplanation": "Schedule within the exact source window.",
+      "sourceIds": ["s-followups"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "specialtyOrService": "Pulmonary clinic",
+      "timingAsWritten": "in 2-4 weeks",
+      "schedulingInstruction": "Schedule follow-up."
+    }
+  ],
+  "dietAndFluidInstructions": [
+    {
+      "id": "diet-sodium-fluid",
+      "title": "Sodium and fluid limits",
+      "detail": "Limit sodium to 2,000 mg per day. Limit total fluids to 1.5 L per day until the cardiology visit.",
+      "plainLanguageExplanation": "Keep the exact daily limits and the source-stated end point.",
+      "sourceIds": ["s-diet"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    }
+  ],
+  "restrictions": [
+    {
+      "id": "restriction-walker",
+      "title": "Use the rolling walker",
+      "detail": "Use the rolling walker for all walking until Physical Therapy says it is no longer needed.",
+      "plainLanguageExplanation": "Use the walker for all walking until the source-stated condition is met.",
+      "sourceIds": ["s-restrictions"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    },
+    {
+      "id": "restriction-lifting",
+      "title": "Lifting limit",
+      "detail": "Do not lift more than 10 lb for 7 days.",
+      "plainLanguageExplanation": "The document gives an exact weight and duration.",
+      "sourceIds": ["s-restrictions"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    }
+  ],
+  "homeServices": [
+    {
+      "id": "service-visiting-nurse",
+      "title": "Visiting nurse",
+      "detail": "First home visit within 48 hours for medication reconciliation and symptom review.",
+      "plainLanguageExplanation": "The document schedules a visiting-nurse visit within 48 hours.",
+      "sourceIds": ["s-home-service"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    }
+  ],
+  "equipment": [
+    {
+      "id": "equipment-walker",
+      "title": "Rolling walker",
+      "detail": "Use for all walking until Physical Therapy says it is no longer needed.",
+      "plainLanguageExplanation": "The rolling walker is the equipment named by the source.",
+      "sourceIds": ["s-restrictions"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    }
+  ],
+  "pendingTests": [
+    {
+      "id": "pending-results",
+      "title": "Results still pending or due for recheck",
+      "detail": "Final blood culture report and basic metabolic panel recheck.",
+      "plainLanguageExplanation": "Ask the primary care office to confirm that these results were reviewed.",
+      "sourceIds": ["s-pending"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    }
+  ],
+  "patientEducation": [
+    {
+      "id": "education-weight-log",
+      "title": "Bring the medication list and weight log",
+      "detail": "Bring this medication list and your morning weight log to each follow-up visit.",
+      "plainLanguageExplanation": "The document asks you to bring both items to follow-up visits.",
+      "sourceIds": ["s-education-log"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": []
+    }
+  ],
+  "warningSigns": [
+    {
+      "id": "warning-care-team",
+      "title": "Call the care team now",
+      "plainLanguageExplanation": "These warning signs and the call instruction come directly from the document.",
+      "sourceIds": ["s-warning-signs"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "signAsWritten": "new or worsening shortness of breath, new chest pressure, fainting, confusion, inability to keep medicines down, or swelling that is rapidly worsening",
+      "sourceActionAsWritten": "Call the care team now."
+    },
+    {
+      "id": "warning-weight",
+      "title": "Call cardiology for source-listed weight changes",
+      "plainLanguageExplanation": "Use the exact thresholds shown in the monitoring section.",
+      "sourceIds": ["s-warning-weight", "s-monitor-weight"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "signAsWritten": "weight increases by > 2 lb in 24 hours or > 5 lb in 7 days",
+      "sourceActionAsWritten": "Call the cardiology office the same day."
+    }
+  ],
+  "glossaryTerms": [
+    {
+      "term": "Diuresis",
+      "explanation": "Removal of extra fluid through increased urination.",
+      "sourceIds": ["s-glossary"]
+    },
+    {
+      "term": "Ejection fraction",
+      "explanation": "A measure of how much blood the heart pumps with each beat.",
+      "sourceIds": ["s-glossary"]
+    },
+    {
+      "term": "Basic metabolic panel",
+      "explanation": "A blood test that includes kidney-function and electrolyte measurements.",
+      "sourceIds": ["s-glossary"]
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "uncertainty-missing-scale",
+      "title": "Heart Failure Zone Scale is missing",
+      "detail": "The document references an attached scale, but it is not included in this packet.",
+      "plainLanguageExplanation": "ClearCare cannot explain an attachment it did not receive.",
+      "sourceIds": ["s-education-scale"],
+      "confidence": "high",
+      "sourceMatchStatus": "matched",
+      "conflictIds": [],
+      "reason": "missing_attachment",
+      "confirmationPrompt": "Ask the care team for the referenced Heart Failure Zone Scale."
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "conflict-insulin-dose",
+      "title": "Insulin glargine nightly dose differs",
+      "description": "Page 2 and page 4 give different nightly doses. ClearCare does not choose one.",
+      "valuesAsWritten": ["8 units under the skin nightly", "10 units under the skin nightly"],
+      "sourceIds": ["s-med-insulin", "s-conflict-insulin"],
+      "status": "unresolved"
+    }
+  ],
+  "sources": [
+    { "id": "s-reason", "pageNumber": 1, "sectionName": "REASON FOR ADMISSION", "excerpt": "Admitted for worsening shortness of breath and swelling in both legs.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-primary-diagnoses", "pageNumber": 1, "sectionName": "PRIMARY DIAGNOSES", "excerpt": "1. Acute decompensated heart failure with preserved ejection fraction. 2. Community-acquired pneumonia, improving.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-secondary-diagnoses", "pageNumber": 1, "sectionName": "SECONDARY DIAGNOSES", "excerpt": "Chronic kidney disease stage 3; type 2 diabetes mellitus; hypertension; chronic venous insufficiency.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-hospital-course", "pageNumber": 1, "sectionName": "HOSPITAL COURSE", "excerpt": "Jordan Sample was treated during this fictional admission with intravenous diuresis and antibiotics. Oxygen was weaned before discharge. Kidney function was monitored while fluid status improved. The inpatient cardiology team reviewed the echocardiogram, and physical therapy assessed safe mobility. This paragraph describes the hospital stay; it is not a new instruction for home.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-procedures", "pageNumber": 1, "sectionName": "PROCEDURES AND CONSULTATIONS", "excerpt": "Procedures: Transthoracic echocardiogram on March 3, 2031.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-consultations", "pageNumber": 1, "sectionName": "PROCEDURES AND CONSULTATIONS", "excerpt": "Consultations: Cardiology; Physical Therapy; Care Management.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-disposition", "pageNumber": 1, "sectionName": "DISPOSITION, CODE STATUS, AND ALLERGIES", "excerpt": "Disposition: Home with visiting nurse services. Code status: Full code. Allergies: Penicillin - rash (as written in this fictional record).", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-med-furosemide", "pageNumber": 2, "sectionName": "MEDICATION RECONCILIATION", "excerpt": "START furosemide 40 mg tablet: Take 1 tablet by mouth once daily for 7 days.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-med-carvedilol", "pageNumber": 2, "sectionName": "MEDICATION RECONCILIATION", "excerpt": "CONTINUE carvedilol 12.5 mg tablet: Take 1 tablet by mouth twice daily.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-med-lisinopril", "pageNumber": 2, "sectionName": "MEDICATION RECONCILIATION", "excerpt": "CHANGE lisinopril 10 mg tablet: Take 1 tablet by mouth once daily. HOLD if systolic blood pressure is < 100 mmHg.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-med-ibuprofen", "pageNumber": 2, "sectionName": "MEDICATION RECONCILIATION", "excerpt": "STOP ibuprofen 200 mg tablet: Do not resume unless your prescriber gives new instructions.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-med-doxycycline", "pageNumber": 2, "sectionName": "MEDICATION RECONCILIATION", "excerpt": "TEMPORARY doxycycline 100 mg capsule: Take 1 capsule by mouth twice daily for 3 days, then stop.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-med-insulin", "pageNumber": 2, "sectionName": "MEDICATION RECONCILIATION", "excerpt": "CONTINUE insulin glargine 100 units/mL: Inject 8 units under the skin nightly.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-med-atorvastatin", "pageNumber": 2, "sectionName": "MEDICATION RECONCILIATION", "excerpt": "CONTINUE atorvastatin 20 mg tablet: Take 1 tablet by mouth nightly.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-med-metformin", "pageNumber": 2, "sectionName": "MEDICATION RECONCILIATION", "excerpt": "HOLD metformin 500 mg tablet until the kidney-function recheck is reviewed; ask the prescribing clinician when to resume.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-med-potassium-a", "pageNumber": 2, "sectionName": "MEDICATION RECONCILIATION", "excerpt": "CHANGE potassium chloride 10 mEq tablet: Take 2 tablets (20 mEq) by mouth", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-med-potassium-b", "pageNumber": 3, "sectionName": "MEDICATION RECONCILIATION - CONTINUED", "excerpt": "once daily for 5 days, then resume 10 mEq once daily.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-monitor-weight", "pageNumber": 3, "sectionName": "MONITORING AND FOLLOW-UP", "excerpt": "Weigh yourself every morning after using the bathroom and before breakfast. Call the cardiology office the same day if your weight increases by > 2 lb in 24 hours or > 5 lb in 7 days.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-monitor-lab", "pageNumber": 3, "sectionName": "MONITORING AND FOLLOW-UP", "excerpt": "Have a basic metabolic panel checked within 48 hours. The ordering clinic will review potassium and kidney-function results.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-followups", "pageNumber": 3, "sectionName": "MONITORING AND FOLLOW-UP", "excerpt": "Schedule cardiology follow-up within 5-7 days. Schedule primary care follow-up within 7 days. Pulmonary clinic follow-up is requested in 2-4 weeks.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-diet", "pageNumber": 3, "sectionName": "DIET, FLUID, ACTIVITY, AND CARE", "excerpt": "Limit sodium to 2,000 mg per day. Limit total fluids to 1.5 L per day until the cardiology visit.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-restrictions", "pageNumber": 3, "sectionName": "DIET, FLUID, ACTIVITY, AND CARE", "excerpt": "Use the rolling walker for all walking until Physical Therapy says it is no longer needed. Do not lift more than 10 lb for 7 days.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-home-service", "pageNumber": 3, "sectionName": "DIET, FLUID, ACTIVITY, AND CARE", "excerpt": "Visiting nurse: first home visit within 48 hours for medication reconciliation and symptom review.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-pending", "pageNumber": 3, "sectionName": "PENDING ITEMS", "excerpt": "Pending at discharge: final blood culture report and basic metabolic panel recheck. Ask the primary care office to confirm that results were reviewed.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-warning-signs", "pageNumber": 4, "sectionName": "WARNING SIGNS FROM THIS DOCUMENT", "excerpt": "Call the care team now for new or worsening shortness of breath, new chest pressure, fainting, confusion, inability to keep medicines down, or swelling that is rapidly worsening.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-warning-weight", "pageNumber": 4, "sectionName": "WARNING SIGNS FROM THIS DOCUMENT", "excerpt": "The document instructs you to call the cardiology office the same day for the weight thresholds listed on page 3. If you believe you are experiencing an emergency, contact local emergency services.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-education-scale", "pageNumber": 4, "sectionName": "PATIENT EDUCATION", "excerpt": "Review the Heart Failure Zone Scale attached to these instructions. The referenced scale was not included in this synthetic packet.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-education-log", "pageNumber": 4, "sectionName": "PATIENT EDUCATION", "excerpt": "Bring this medication list and your morning weight log to each follow-up visit.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-conflict-insulin", "pageNumber": 4, "sectionName": "MEDICATION ACTION LIST", "excerpt": "Medication action list states: continue insulin glargine 10 units under the skin nightly.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" },
+    { "id": "s-glossary", "pageNumber": 4, "sectionName": "PLAIN-LANGUAGE GLOSSARY", "excerpt": "Diuresis: removal of extra fluid through increased urination. Ejection fraction: a measure of how much blood the heart pumps with each beat. Basic metabolic panel: a blood test that includes kidney-function and electrolyte measurements.", "normalizedWhitespace": null, "locator": null, "extractionMethod": "fixture", "matchStatus": "matched", "confidence": "high" }
+  ],
+  "pageCoverage": [
+    { "pageNumber": 1, "processingStatus": "processed", "detectedSections": ["encounter", "reason for admission", "diagnoses", "hospital course", "procedures", "consultations", "disposition", "allergies"], "evidenceBlockCount": 7, "actionableItemsFound": false, "confidence": "high", "warnings": ["Hospital-course narrative is background context, not a home action."] },
+    { "pageNumber": 2, "processingStatus": "processed", "detectedSections": ["medication reconciliation"], "evidenceBlockCount": 9, "actionableItemsFound": true, "confidence": "high", "warnings": ["Final medication item continues on page 3."] },
+    { "pageNumber": 3, "processingStatus": "processed", "detectedSections": ["medication reconciliation", "monitoring", "follow-up", "diet and fluid", "restrictions", "home services", "pending items"], "evidenceBlockCount": 8, "actionableItemsFound": true, "confidence": "high", "warnings": [] },
+    { "pageNumber": 4, "processingStatus": "processed", "detectedSections": ["warning signs", "patient education", "medication action list", "glossary"], "evidenceBlockCount": 7, "actionableItemsFound": true, "confidence": "high", "warnings": ["Referenced attachment is missing.", "Insulin dose conflicts with page 2."] }
+  ],
+  "teachBackQuestions": [
+    {
+      "id": "quiz-weight",
+      "prompt": "When does the document say to call the cardiology office about weight gain?",
+      "options": ["More than 2 lb in 24 hours or more than 5 lb in 7 days", "Exactly 1 lb in any week", "Only at the next scheduled visit"],
+      "correctOptionIndex": 0,
+      "correction": "The source says to call the cardiology office the same day for an increase of > 2 lb in 24 hours or > 5 lb in 7 days.",
+      "sourceIds": ["s-monitor-weight"],
+      "concept": "monitoring"
+    },
+    {
+      "id": "quiz-lab",
+      "prompt": "What time window does the document give for the basic metabolic panel?",
+      "options": ["Within 48 hours", "In 30 days", "No time window is listed"],
+      "correctOptionIndex": 0,
+      "correction": "The source requests a basic metabolic panel within 48 hours.",
+      "sourceIds": ["s-monitor-lab"],
+      "concept": "follow_up"
+    },
+    {
+      "id": "quiz-restriction",
+      "prompt": "What does the document say about walking after discharge?",
+      "options": ["Use the rolling walker for all walking until Physical Therapy says it is no longer needed", "Avoid all walking for 7 days", "Use the walker only outdoors"],
+      "correctOptionIndex": 0,
+      "correction": "The source says to use the rolling walker for all walking until Physical Therapy says it is no longer needed.",
+      "sourceIds": ["s-restrictions"],
+      "concept": "restriction"
+    },
+    {
+      "id": "quiz-insulin",
+      "prompt": "What should happen with the conflicting insulin glargine doses?",
+      "options": ["Confirm the unresolved difference with the care team", "Average the two doses", "Always choose the later page"],
+      "correctOptionIndex": 0,
+      "correction": "The source pages list 8 units and 10 units. ClearCare leaves the conflict unresolved for confirmation.",
+      "sourceIds": ["s-med-insulin", "s-conflict-insulin"],
+      "concept": "medication"
+    }
+  ],
+  "analysisMetadata": {
+    "mode": "deterministic_demo",
+    "schemaVersion": "1.0.0",
+    "analyzedAt": "2031-03-06T12:00:00.000Z",
+    "model": null,
+    "liveApiUsed": false,
+    "sourceMatchCounts": {
+      "matched": 30,
+      "partiallyMatched": 0,
+      "unverified": 0
+    }
+  }
+}

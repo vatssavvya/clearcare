@@ -1,0 +1,55 @@
+{
+  "name": "clearcare",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Source-linked discharge instructions, made easier to understand.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:live-api": "tsx scripts/live-api-test.ts",
+    "generate:sample": "node scripts/generate-sample.mjs",
+    "secrets:check": "tsx scripts/secret-check.ts",
+    "package": "tsx scripts/package.ts"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "16.3.1",
+    "openai": "7.4.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.2.108",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@playwright/test": "1.62.1",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@types/archiver": "^6.0.3",
+    "@types/node": "^24.10.4",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitest/coverage-v8": "^4.0.16",
+    "archiver": "^7.0.1",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "16.3.1",
+    "jsdom": "^27.4.0",
+    "tailwindcss": "4.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.52.0",
+    "vitest": "4.1.10"
+  }
+}

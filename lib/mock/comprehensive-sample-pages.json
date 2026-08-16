@@ -1,0 +1,149 @@
+{
+  "title": "Northstar Harbor Medical Center - Fictional Discharge Summary",
+  "subtitle": "Synthetic demonstration document - not a real patient record",
+  "pages": [
+    {
+      "pageNumber": 1,
+      "sections": [
+        {
+          "heading": "ENCOUNTER",
+          "blocks": [
+            "Patient: Jordan Sample | Age range: 60-69 | Preferred language: English",
+            "Encounter: NHMC-DEMO-1042 | Admission: March 2, 2031 | Discharge: March 6, 2031",
+            "Facility: Northstar Harbor Medical Center (fictional) | Demo line: 555-0100 (non-working)"
+          ]
+        },
+        {
+          "heading": "REASON FOR ADMISSION",
+          "blocks": [
+            "Admitted for worsening shortness of breath and swelling in both legs."
+          ]
+        },
+        {
+          "heading": "PRIMARY DIAGNOSES",
+          "blocks": [
+            "1. Acute decompensated heart failure with preserved ejection fraction.",
+            "2. Community-acquired pneumonia, improving."
+          ]
+        },
+        {
+          "heading": "SECONDARY DIAGNOSES",
+          "blocks": [
+            "Chronic kidney disease stage 3; type 2 diabetes mellitus; hypertension; chronic venous insufficiency."
+          ]
+        },
+        {
+          "heading": "HOSPITAL COURSE",
+          "blocks": [
+            "Jordan Sample was treated during this fictional admission with intravenous diuresis and antibiotics. Oxygen was weaned before discharge. Kidney function was monitored while fluid status improved. The inpatient cardiology team reviewed the echocardiogram, and physical therapy assessed safe mobility. This paragraph describes the hospital stay; it is not a new instruction for home.",
+            "Echocardiogram showed an ejection fraction of 58%. Chest imaging was reported as improved before discharge. No medication purpose should be inferred from this narrative."
+          ]
+        },
+        {
+          "heading": "PROCEDURES AND CONSULTATIONS",
+          "blocks": [
+            "Procedures: Transthoracic echocardiogram on March 3, 2031.",
+            "Consultations: Cardiology; Physical Therapy; Care Management."
+          ]
+        },
+        {
+          "heading": "DISPOSITION, CODE STATUS, AND ALLERGIES",
+          "blocks": [
+            "Disposition: Home with visiting nurse services. Code status: Full code. Allergies: Penicillin - rash (as written in this fictional record)."
+          ]
+        }
+      ]
+    },
+    {
+      "pageNumber": 2,
+      "sections": [
+        {
+          "heading": "MEDICATION RECONCILIATION",
+          "blocks": [
+            "START furosemide 40 mg tablet: Take 1 tablet by mouth once daily for 7 days.",
+            "CONTINUE carvedilol 12.5 mg tablet: Take 1 tablet by mouth twice daily.",
+            "CHANGE lisinopril 10 mg tablet: Take 1 tablet by mouth once daily. HOLD if systolic blood pressure is < 100 mmHg.",
+            "STOP ibuprofen 200 mg tablet: Do not resume unless your prescriber gives new instructions.",
+            "TEMPORARY doxycycline 100 mg capsule: Take 1 capsule by mouth twice daily for 3 days, then stop.",
+            "CONTINUE insulin glargine 100 units/mL: Inject 8 units under the skin nightly.",
+            "CONTINUE atorvastatin 20 mg tablet: Take 1 tablet by mouth nightly.",
+            "HOLD metformin 500 mg tablet until the kidney-function recheck is reviewed; ask the prescribing clinician when to resume.",
+            "CHANGE potassium chloride 10 mEq tablet: Take 2 tablets (20 mEq) by mouth"
+          ]
+        }
+      ],
+      "footerNote": "The potassium instruction continues at the top of page 3."
+    },
+    {
+      "pageNumber": 3,
+      "sections": [
+        {
+          "heading": "MEDICATION RECONCILIATION - CONTINUED",
+          "blocks": [
+            "once daily for 5 days, then resume 10 mEq once daily."
+          ]
+        },
+        {
+          "heading": "MONITORING AND FOLLOW-UP",
+          "blocks": [
+            "Weigh yourself every morning after using the bathroom and before breakfast. Call the cardiology office the same day if your weight increases by > 2 lb in 24 hours or > 5 lb in 7 days.",
+            "Have a basic metabolic panel checked within 48 hours. The ordering clinic will review potassium and kidney-function results.",
+            "Schedule cardiology follow-up within 5-7 days. Schedule primary care follow-up within 7 days. Pulmonary clinic follow-up is requested in 2-4 weeks."
+          ]
+        },
+        {
+          "heading": "DIET, FLUID, ACTIVITY, AND CARE",
+          "blocks": [
+            "Limit sodium to 2,000 mg per day. Limit total fluids to 1.5 L per day until the cardiology visit.",
+            "Use the rolling walker for all walking until Physical Therapy says it is no longer needed. Do not lift more than 10 lb for 7 days.",
+            "Visiting nurse: first home visit within 48 hours for medication reconciliation and symptom review."
+          ]
+        },
+        {
+          "heading": "PENDING ITEMS",
+          "blocks": [
+            "Pending at discharge: final blood culture report and basic metabolic panel recheck. Ask the primary care office to confirm that results were reviewed."
+          ]
+        }
+      ]
+    },
+    {
+      "pageNumber": 4,
+      "sections": [
+        {
+          "heading": "WARNING SIGNS FROM THIS DOCUMENT",
+          "blocks": [
+            "Call the care team now for new or worsening shortness of breath, new chest pressure, fainting, confusion, inability to keep medicines down, or swelling that is rapidly worsening.",
+            "The document instructs you to call the cardiology office the same day for the weight thresholds listed on page 3. If you believe you are experiencing an emergency, contact local emergency services."
+          ]
+        },
+        {
+          "heading": "PATIENT EDUCATION",
+          "blocks": [
+            "Review the Heart Failure Zone Scale attached to these instructions. The referenced scale was not included in this synthetic packet.",
+            "Bring this medication list and your morning weight log to each follow-up visit."
+          ]
+        },
+        {
+          "heading": "MEDICATION ACTION LIST",
+          "blocks": [
+            "Medication action list states: continue insulin glargine 10 units under the skin nightly.",
+            "This conflicts with the 8 units nightly shown in the medication reconciliation on page 2. ClearCare must not choose between these values."
+          ]
+        },
+        {
+          "heading": "PLAIN-LANGUAGE GLOSSARY",
+          "blocks": [
+            "Diuresis: removal of extra fluid through increased urination. Ejection fraction: a measure of how much blood the heart pumps with each beat. Basic metabolic panel: a blood test that includes kidney-function and electrolyte measurements."
+          ]
+        },
+        {
+          "heading": "FINAL NOTE",
+          "blocks": [
+            "This document is entirely fictional and was created for the ClearCare hackathon demonstration. It is not medical advice and is not for clinical use."
+          ]
+        }
+      ]
+    }
+  ]
+}
